@@ -1,0 +1,430 @@
+<html>
+	<head>	
+		<title>BBC News</title>		
+		<style type="text/css">			
+			body{			
+				margin:0;
+				padding:0;			
+			}
+			#topBar{	
+				width:1000px;
+				margin:0 auto;
+				height:40px;	
+				background-color:white;
+			}			
+			#bbcImage{		
+				margin:5px;
+				float:left;			
+			}		
+			#pointLine{		
+				float:left;
+				height:100%;
+				width:10px;				
+			}			
+			#Line{			
+				float:left;
+				height:100%;
+				width:1px;				
+			}	
+
+			#Lupa{			
+				float:left;
+				height:21px;
+				width:21px;		
+				margin-top:8px;
+			}	
+			
+			.topBars{
+				float:left;
+				font-size:13px;
+				font-family: Helvetica, freesans, sans-serif;
+				font-weight:bold;
+				text-align:center;
+				height:25px;
+				margin-top:10px;
+			}
+			
+			#searchBar{
+				
+				float:left;
+				background-color:#E4E4E4;
+				color:black;
+				font-weight:bold;
+				font-family: Helvetica, freesans, sans-serif;
+				margin:8px 5px;
+				margin-right:0px;
+				width:200px;
+				height:21px;
+				border:none;
+				
+			}
+			
+			#redBar{
+			
+				background-color:#BB1919;
+				width:100%;
+				height:60px;
+				margin-top:0;
+			
+			}
+			
+			#NEWSName{
+			
+				color:white;
+				float:left;
+				padding-left:184px;
+				padding-top:5px;
+				font-family: Helvetica, freesans, sans-serif;
+				font-size:45;
+			
+			}
+			
+			#SignIn{width:150px;}
+			#tech{width:100px;}
+			#news{width:50px;}
+			#sports{width:60px;}
+			#weather{width:60px;}
+			#iplayer{width:60px;}
+			#tv{width:40px;}
+			#radio{width:50px;}
+			#more{width:50px;}
+			
+			#SignIn:hover{border-bottom:5px blue solid;}
+			#tech:hover{border-bottom:5px #ff00ff solid;}
+			#news:hover{border-bottom:5px yellow solid;}
+			#sports:hover{border-bottom:5px green solid;}
+			#weather:hover{border-bottom:5px black solid;}
+			#iplayer:hover{border-bottom:5px purple solid;}
+			#tv:hover{border-bottom:5px orange solid;}
+			#radio:hover{border-bottom:5px brown solid;}
+			#more:hover{border-bottom:5px red solid;}
+			
+			#newsBT{
+			
+				float:right;
+				background-color:#BB1919;
+				width:200px;
+				height:30px;
+				margin-right:225px;
+				margin-top:15px;
+				font-family:Helvetica, freesans, sans-serif;
+				color:white;
+				font-size:20;
+				border: 1px #E4E4E4 solid;
+				text-align:center;
+				text-decoration:none;
+				padding-top:5px;
+			}
+			
+			#newsBT:hover{text-decoration:underline;}
+			
+			#secondBar{
+			
+				width:100%;
+				background-color:#A91717;
+				height:40px;
+				
+			}
+			
+			#secondBarContent{
+			
+				width:1000px;
+				margin:0 auto;
+				height:40px;	
+				background-color:#A91717;
+				position:relative;
+				right:3px
+			
+			}
+			
+			.secondBarBlocks{
+			
+				float:left;
+				color:white;
+				font-family:Helvetica, freesans, sans-serif;
+				border-right: 1px white solid;
+				padding-right:10px;
+				padding-left:10px;
+				margin-top:10px
+			}
+			#MoreSecondBar{
+				
+				float:left;
+				color:white;
+				font-family:Helvetica, freesans, sans-serif;
+				border-right: 1px #A91717 solid;
+				padding-right:10px;
+				padding-left:10px;
+				margin-top:10px
+				
+			}
+			.goUp{
+				
+			}
+			#bigNewsBox{
+				
+				width:1000px;
+				height:500px;
+				margin:0 auto;
+				
+				
+			}
+			
+			#TechnologyTitle{
+			
+				color:#404040;
+				font-weight:bold;
+				border-bottom: 3px #A91717 solid;
+				float:left;
+				font-family:Helvetica, freesans, sans-serif;
+				
+				
+			
+			}
+			
+			#leftPart{
+				
+				height:500px;
+				width:650px;
+				border-right: 3px gray solid;	
+				
+				
+			}
+			
+			h1{
+				
+				clear:both;
+				font-family:Helvetica, freesans, sans-serif;
+				
+				
+			}
+			
+			#summBox{
+			
+				width:250px;
+				color:gray;
+				font-family:Helvetica, freesans, sans-serif;
+				
+			
+			}
+			
+			#timeUp{
+				float:left;
+				padding-left:20px;
+				border-right: 1px gray solid;
+				font-size:14;
+				padding-right:5px;
+				font-family:Helvetica, freesans, sans-serif;
+			}
+			
+			#techLink{
+			
+				float:left;
+				padding-left:5px;
+				color:#BB1919;
+				font-family:Helvetica, freesans, sans-serif;
+				font-size:14;
+				text-decoration:none;
+			
+			}
+			
+			#techLink:hover{
+			
+				color:blue;
+			
+			}
+			
+			#newsImage{
+				
+				clear:both;
+				float:right;
+				padding-right:10px;
+			
+			}
+			
+			#redLine{
+			
+				clear:both;
+				float:left;
+				width:50px;
+				border-bottom:1px #BB1919 solid;
+				position:relative;
+				top:-100px;
+			
+			}
+			
+			#someLinks a{
+				width:250px;
+				color:black;
+				font-family:Helvetica, freesans, sans-serif;
+				font-size:12;
+				text-decoration:none;
+				
+			}
+			
+			
+			
+			#Home:hover{border-bottom:3px white solid;}
+			#PR:hover{border-bottom:3px white solid;}
+			#World:hover{border-bottom:3px white solid;}
+			#Business:hover{border-bottom:3px white solid;}
+			#Politics:hover{border-bottom:3px white solid;}
+			#TechS:hover{border-bottom:3px white solid;}
+			#Science:hover{border-bottom:3px white solid;}
+			#Health:hover{border-bottom:3px white solid;}
+			#Education:hover{border-bottom:3px white solid;}
+			#Entertainment:hover{border-bottom:3px white solid;}
+			#Video:hover{border-bottom:3px white solid;}
+			#MoreSecondBar:hover{border-bottom:3px white solid;}
+			
+		</style>
+	
+	</head>
+	
+	<body>
+	
+		<div id="topBar">
+		
+			<img id="bbcImage" src="BBCLogo.png">
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="SignIn" class="topBars"> Sign In </div>
+			
+			<div> <img id="pointLine" src="PointLine.png"> </div>
+			
+			<div id="tech" class="topBars"> Technology </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="news" class="topBars"> News </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="sports" class="topBars"> Sports </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="weather" class="topBars"> Weather </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="iplayer" class="topBars"> iPlayer </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="tv" class="topBars"> TV </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="radio" class="topBars"> Radio </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div id="more" class="topBars"> More </div>
+			
+			<div> <img id="Line" src="Line.png"> </div>
+			
+			<div>
+			
+				<input id="searchBar" type="text" placeholder="Search">
+			
+			</div>
+			
+			<div><input type="image" id="lupa" src="Lupa.png"></div>
+		
+		</div>
+		
+		<div id="redBar">
+		
+			<div id="NEWSName">
+			
+				NEWS
+			
+			</div>
+			
+			<div>
+				
+				<a id="newsBT" href="">Find local news</a>
+			
+			</div>
+			
+		</div>
+		
+		<div id="secondBar">
+		
+			<div id="secondBarContent">
+			
+				<div id="Home" width="100%" class="secondBarBlocks">Home</div>
+				<div id="PR" width="100%" class="secondBarBlocks">PR</div>
+				<div id="World" width="100%" class="secondBarBlocks">World</div>
+				<div id="Business" width="100%" class="secondBarBlocks">Business</div>
+				<div id="Politics" width="100%" class="secondBarBlocks">Politics</div>
+				<div id="TechS" width="100%" class="secondBarBlocks">Tech</div>
+				<div id="Science" width="100%" class="secondBarBlocks">Science</div>
+				<div id="Health" width="100%" class="secondBarBlocks">Health</div>
+				<div id="Education" width="100%" class="secondBarBlocks">Education</div>
+				<div id="Entertainment" width="100%" class="secondBarBlocks">Entertainment & Arts</div>
+				<div id="Video" width="100%" class="secondBarBlocks">Video & Audio</div>
+				<div id="MoreSecondBar">More</div>
+			
+			</div>
+		
+		</div>
+		
+		<div id="bigNewsBox">
+		
+			<div id="leftPart" class="goUp">
+			
+			
+				<h2 id="TechnologyTitle">Technology</h2>
+				<h1>Asda bug exposed payment details</h1>
+				
+				<div id="newsImage">
+					<img src="NewsImage.png">
+				</div>
+				
+				<div id="summBox">
+				
+					<p id="summary">
+					
+						Security vulnerabilities that put customers
+						at risk have affected Asda's website for a 
+						couple of years, a security expert has revealed;
+						
+						<div id="timeUp">
+						
+							2 hours ago
+						
+						</div>
+						
+						<div>
+						
+							<a id="techLink" href="">
+							
+								Technology
+							
+							</a>
+						
+						</div>
+						
+						<hr id="redLine">
+						<br><br>
+						<div id="someLinks">
+							
+							<a href="">Surveillance form hit in hack attack</a>
+							<br><br>
+							<a href="">eBay flaw has existed for months</a>
+							
+						</div>
+					</p>
+				
+				</div>
+				
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>
